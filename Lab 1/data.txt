@@ -1,0 +1,89 @@
+---------------------------
+Uppgift 1
+---------------------------
+
+Några av krypteringsnycklarna
+
+# Monoalfabetiskt substitutionskrypto
+n = 'dqkåaäuröshjiebcpxvfogylmztn'
+
+# Playfair
+n = 'drlxayszhkepbciqufgmvontw'
+
+# ADFGVX
+n = 'g6u7aq8rdshjix1f2plw5mt0eb4v9ocykzn3'
+
+# Hillkrypto
+A = matrix(Zmod(28), [[5, 2, 18], [19, 1, 9], [17, 16, 13]])
+
+# RSA
+n = 36134934063919959150141797353966441
+e = 1330643366620853071
+
+# Kryptogram
+# Använd ci.lower() för att konvertera till gemener.
+
+# I
+c1 = 'LIGSLAAÄTLMMTNUOIRLREDGM'
+
+# II
+c2 = 'LDEOBMRNJKMMLXYBRJQFPHQZPYIRD'
+
+# III
+c3 = 32107833669138743416991214827014308
+
+# IV
+c4 = 'RBBJDQDEÅBBJDQDEÅGAIHDEIDEJÖFDCZ'
+
+# V
+c5 = 'JÖBSTFKÄJJSAXLCEÖLUHÖACÄNMLÅMCAOIBTT'
+
+# VI
+c6 = 'FMJÖJTIBYKFGÖKLHÖFGQFÅMBDJÅFUUFMJKUFK'
+
+# VII
+c7 = ['1DCDB9E4E6EA1049', '83B2AE7D8E20B92B', '63C8B4251AFAC981', 'A6F5AED397A81135']
+
+# VIII
+c8 = 'IPGCÅCYVCPGÖRHIRU'
+
+# IX
+c9 = 'VDAFVFDDXVXVGXGAVDFDGAVX'
+
+# X
+c10 = 'RTBLMÖPLVKÄPGSQULHGDYEBHJ'
+
+# XI
+c11 = 'RVTWPUBAXNYCCPLWHR'
+
+
+---------------------------
+Uppgift 3
+---------------------------
+
+P1 = matrix(6, 4, [0, 1, 0, 0,
+                   1, 0, 0, 0,
+                   0, 0, 1, 0,
+                   0, 0, 0, 1,
+                   0, 0, 1, 0,
+                   1, 0, 0, 0])
+
+P2 = matrix(4, 6, [0, 0, 1, 0, 0, 0,
+                   0, 0, 0, 0, 1, 0,
+                   1, 0, 0, 0, 0, 0,
+                   0, 0, 0, 0, 0, 1])
+
+A = matrix(Zmod(28), 6, 6, [11, 7, 19, 0, 1, 15,
+                            2, 9, 27, 5, 21, 5,
+                            25, 8, 12, 2, 4, 10,
+                            20, 16, 4, 18, 1, 23,
+                            3, 0, 19, 21, 2, 13,
+                            6, 24, 22, 5, 24, 26 ])
+
+S = vector(Zmod(28), [3, 5, 7, 11, 13, 17])
+
+(e) Klartext (mindre justering krävs innan kryptering):
+Basically I believe in peace and bashing two bricks together!
+
+(g) Kryptogram
+VRQHJJBNRJÅFMJFARZPEÖYLCBCXÅIVIKXÖÄMOEMSGAÅDHÄNZLJÄRCEPY
